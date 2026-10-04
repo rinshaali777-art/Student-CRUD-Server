@@ -1,17 +1,11 @@
 {
-  "name": "student",
+  "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-     "server": "json-server --watch db.json --port 3000"
-
+    "start": "json-server db.json --host 0.0.0.0 --port $PORT",
+    "dev": "json-server --watch db.json --port 3000"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "json-server": "^1.0.0-beta.15"
   }
